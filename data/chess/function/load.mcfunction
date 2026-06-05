@@ -23,7 +23,7 @@ scoreboard objectives add const dummy
 
 scoreboard players set #counter temp 0
 scoreboard players set #pos_modulo temp 0
-
+scoreboard players set #fen_pos temp 0
 
 scoreboard objectives add global dummy
 scoreboard players set #next_board global 1
