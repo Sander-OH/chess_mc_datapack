@@ -21,6 +21,7 @@ scoreboard objectives add color dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add const dummy
 
+# Math and logic
 scoreboard players set #counter temp 0
 scoreboard players set #pos_modulo temp 0
 scoreboard players set #fen_pos temp 0
@@ -28,5 +29,13 @@ scoreboard players set #fen_pos temp 0
 scoreboard objectives add global dummy
 scoreboard players set #next_board global 1
 
+
+scoreboard players set #nine const 9
 scoreboard players set #eight const 8
+scoreboard players set #seven const 7
 scoreboard players set #two const 2
+scoreboard players set #one const 1
+
+
+function chess:kill_board
+function chess:board_logic/legal_moves/_precompute

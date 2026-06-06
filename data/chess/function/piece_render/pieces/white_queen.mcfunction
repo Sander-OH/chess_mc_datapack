@@ -1,0 +1,1 @@
+execute at @s run setblock ~ ~1 ~ white_glazed_terracotta

@@ -15,6 +15,7 @@ execute at @s if score #counter temp matches 0 anchored eyes positioned ^ ^ ^5 a
 scoreboard players add #counter temp 1
 execute as @e[type=marker,tag=new_square,limit=1] run function chess:create_board/_init_square
 
+
 # Loop
 function chess:create_board/place_markers
 # tellraw @a ["", "Score is: ", {"score":{"name":"@p","objective":"SCORE_NAME"}}]

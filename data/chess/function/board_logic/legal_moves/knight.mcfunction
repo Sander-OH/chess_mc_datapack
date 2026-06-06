@@ -1,0 +1,1 @@
+$data modify storage chess:temp moves set from storage chess:lookup knight."$(position)"
