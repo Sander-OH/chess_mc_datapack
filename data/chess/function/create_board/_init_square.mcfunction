@@ -7,8 +7,8 @@ tag @s remove new_square
 function chess:create_board/_calculate_position
 
 # Checks if this is a black or white square
-execute at @s if score @s color matches 0 run setblock ~ ~ ~ white_concrete
-execute at @s if score @s color matches 1 run setblock ~ ~ ~ black_concrete
+execute at @s if score @s color matches 1 run setblock ~ ~ ~ white_concrete
+execute at @s if score @s color matches 0 run setblock ~ ~ ~ black_concrete
 
 
 # execute at @s if score @s color matches 0 run summon block_display ~ ~ ~ {block_state:{Name:"minecraft:white_concrete"},Tags:["square_visuals"]} 

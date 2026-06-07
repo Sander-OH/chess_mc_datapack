@@ -1,6 +1,5 @@
 # board_x = position - 1
 scoreboard players operation @s board_x = @s board_position
-scoreboard players remove @s board_x 1
 
 # board_y = board_x
 scoreboard players operation @s board_y = @s board_x

@@ -1,6 +1,6 @@
 # Runs when the player triggers create_board
 
-scoreboard players set #counter temp 0
+scoreboard players set #counter temp -1
 
 scoreboard players set @s create_board 0
 scoreboard players enable @s create_board
