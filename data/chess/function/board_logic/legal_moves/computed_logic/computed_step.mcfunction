@@ -7,11 +7,11 @@ execute store result storage chess:temp i int 1 run scoreboard players get #i te
 # call macro function
 execute store result score #board_check temp run function chess:board_logic/legal_moves/_position_check with storage chess:temp
 
-execute if score #board_check temp matches -1 run return 0
-data modify storage chess:temp moves append from storage chess:temp cur_position
+# store position as walkable if it is empty or an opponent piece
+execute if score #board_check temp >= #null const run data modify storage chess:temp moves append from storage chess:temp cur_position
 
 # increment
 scoreboard players add #i temp 1
 
 # continue loop
-execute if score #board_check temp matches 0 run function chess:board_logic/legal_moves/sliding_logic/sliding_step
+function chess:board_logic/legal_moves/computed_logic/computed_step

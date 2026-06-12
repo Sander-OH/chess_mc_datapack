@@ -39,4 +39,4 @@ scoreboard players set #null const 0
 
 
 function chess:kill_board
-function chess:board_logic/legal_moves/_precompute
+function chess:board_logic/legal_moves/computed_logic/_precompute
