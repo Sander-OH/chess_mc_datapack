@@ -1,1 +1,1 @@
-$execute at @s run summon item_display ~0.5 ~1 ~0.5 {Tags:["board_visuals"],item:{id:"minecraft:stick",count:1,components:{"minecraft:custom_model_data":{floats:[$(piece)]}}}}
+$execute at @s run summon item_display ~ ~1 ~ {Rotation:[$(rotation)f, 0f],Tags:["board_visuals"],item:{id:"minecraft:stick",count:1,components:{"minecraft:custom_model_data":{floats:[$(piece)]}}}}
