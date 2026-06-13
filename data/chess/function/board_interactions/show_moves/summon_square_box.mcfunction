@@ -1,0 +1,2 @@
+$execute store result score #sel_i_pos temp run data get storage chess:temp moves[$(i_sel)]
+execute as @e[type=marker] at @s if score @s board_position = #sel_i_pos temp run summon item_display ~ ~1.5 ~ {Tags:["selected_moves"],item:{id:"minecraft:stick",count:1,components:{"minecraft:custom_model_data":{floats:[13]}}}}

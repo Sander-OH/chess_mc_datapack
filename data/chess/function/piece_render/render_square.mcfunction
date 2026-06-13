@@ -1,4 +1,4 @@
-$data modify storage chess:render piece set from storage chess:boards boards.$(board_id).squares[$(index)]
+$data modify storage chess:render piece set from storage chess:boards boards.$(board_id).squares[$(position)]
 
 execute if data storage chess:render {piece:0} run return 1
 $execute as @e[tag=board_square,scores={board_id=$(board_id), board_position=$(position)}] if data storage chess:render {piece:1} run return run function chess:piece_render/pieces/white_pawn

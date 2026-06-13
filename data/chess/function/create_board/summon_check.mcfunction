@@ -5,6 +5,7 @@ scoreboard players set #counter temp -1
 scoreboard players set @s create_board 0
 scoreboard players enable @s create_board
 
+data modify storage chess:temp cur_color set value 1
 
 # Place the board and starting pieces
 function chess:create_board/place_markers
