@@ -36,6 +36,7 @@ scoreboard players set #seven const 7
 scoreboard players set #two const 2
 scoreboard players set #one const 1
 scoreboard players set #null const 0
+scoreboard players set #neg_one const -1
 
 function chess:kill_board
 function chess:board_logic/legal_moves/computed_logic/_precompute

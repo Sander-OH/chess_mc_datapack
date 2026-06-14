@@ -1,4 +1,4 @@
-scoreboard players set #fen_to_load temp 2
+scoreboard players set #fen_to_load temp 0
 
 
 # starting position
