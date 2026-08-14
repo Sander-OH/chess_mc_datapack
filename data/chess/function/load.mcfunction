@@ -11,6 +11,7 @@ scoreboard players enable @a toggle_preview
 scoreboard objectives add preview_enabled dummy
 scoreboard players set @a preview_enabled 0
 
+scoreboard players set #player_promoted temp 1
 
 # Board construction logic
 scoreboard objectives add board_id dummy

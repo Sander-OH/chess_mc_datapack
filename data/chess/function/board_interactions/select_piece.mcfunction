@@ -1,3 +1,4 @@
+execute if score #player_promoted temp = #null const run return say waittt
 $scoreboard players set #sel_piece temp $(selected_piece)
 
 $execute if score #sel_piece temp matches 1 run function chess:board_logic/legal_moves/pawn {color: $(cur_color), position: $(sel_position), board_id: $(board_id)}

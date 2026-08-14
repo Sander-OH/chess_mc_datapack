@@ -26,7 +26,7 @@ scoreboard players set #allow_double_push temp 0
 execute if score #pawn_pos board_y matches 1 run scoreboard players set #allow_double_push temp 1
 execute if score #pawn_pos board_y matches 6 run scoreboard players set #allow_double_push temp 1
 
-execute if score #allow_double_push temp matches 0 run return run say hi
+execute if score #allow_double_push temp matches 0 run return 0
 
 
 # Check double push from initial rank
