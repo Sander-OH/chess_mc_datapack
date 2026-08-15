@@ -5,8 +5,17 @@ kill @e[type=block_display,tag=chess_preview]
 # Function triggers
 scoreboard objectives add create_board trigger
 scoreboard objectives add toggle_preview trigger
+scoreboard objectives add promote_queen trigger
+scoreboard objectives add promote_rook trigger
+scoreboard objectives add promote_bishop trigger
+scoreboard objectives add promote_knight trigger
+
 scoreboard players enable @a create_board
 scoreboard players enable @a toggle_preview
+scoreboard players enable @a promote_queen
+scoreboard players enable @a promote_rook 
+scoreboard players enable @a promote_bishop
+scoreboard players enable @a promote_knight
 
 scoreboard objectives add preview_enabled dummy
 scoreboard players set @a preview_enabled 0

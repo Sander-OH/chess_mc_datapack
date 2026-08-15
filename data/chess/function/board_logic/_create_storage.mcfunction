@@ -1,3 +1,2 @@
 # Add the new board to internal storage
-$data modify storage chess:boards boards.$(board_id) set value {turns:0,color:1,squares:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
-# $data modify storage chess:boards colors.$(board_id) set value {squares:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
+$data modify storage chess:boards boards.$(board_id) set value {turns:0,color:1,selected_piece_square:-1,selected_piece_type:0,waiting_for_promotion:0,promotion_square:-1,pawn_en_passant_rank:-1,squares:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}

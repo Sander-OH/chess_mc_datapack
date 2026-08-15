@@ -12,4 +12,3 @@ $execute if score #cur_color temp matches 2 run data modify storage chess:boards
 execute store result score #cur_color temp run data get storage chess:temp cur_color
 execute if score #cur_color temp matches 1 run data modify storage chess:temp cur_color set value 2
 execute if score #cur_color temp matches 2 run data modify storage chess:temp cur_color set value 1
-say switching

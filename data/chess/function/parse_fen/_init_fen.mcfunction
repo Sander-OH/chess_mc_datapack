@@ -7,8 +7,8 @@ execute if score #fen_to_load temp matches 0 run data modify storage chess:parse
 #test position 1
 execute if score #fen_to_load temp matches 1 run data modify storage chess:parser fen set value "1qpp4.2r5.8.4r3.8.8.KPP5.5pQ1"
 
-#test position 2
-execute if score #fen_to_load temp matches 2 run data modify storage chess:parser fen set value "rnbqkbnr.p7.8.8.8.8.8.RNBQKBNR"
+#test position 2 (pawn promotion)
+execute if score #fen_to_load temp matches 2 run data modify storage chess:parser fen set value "3qkbnr.P7.8.8.8.8.p7.3QKBNR"
 
 
 function chess:parse_fen/start with storage chess:parser
